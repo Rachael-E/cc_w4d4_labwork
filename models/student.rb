@@ -26,7 +26,10 @@ class Student
       age INT
     );"
     SqlRunner.run(sql)
+  end
 
+  def pretty_name()
+    return "#{@first_name} #{@second_name}"
   end
 
   def save()

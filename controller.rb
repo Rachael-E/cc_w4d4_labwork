@@ -3,11 +3,10 @@ require('sinatra/contrib/all')
 require_relative('models/student')
 require_relative('models/house')
 
-#index
+# index
 get '/students' do
-  puts "index route"
-  # @students = Student.all
-  # erb(:index)
+  @students = Student.all
+  erb(:index)
 end
 
 # get '/students/new' do
